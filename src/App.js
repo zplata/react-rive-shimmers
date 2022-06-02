@@ -25,28 +25,30 @@ function App() {
     </>    
   );
 
+  const uniformFit = Fit.Fill;
+
   const BioLine1 = isLoaded ? (
     <h4 style={{fontWeight: "600"}}>This is my bio card</h4>
   ) : (
-    <ShimmerComponent fit={Fit.FillWidth} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={50} />
+    <ShimmerComponent fit={uniformFit} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={50} />
   );
 
   const BioLine2 = isLoaded ? (
     <p>It isn't exciting here...</p>
   ) : (
-    <ShimmerComponent fit={Fit.FillWidth} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={80} />
+    <ShimmerComponent fit={uniformFit} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={80} />
   );
 
   const BioLine3 = isLoaded ? (
     <p>But look at those shimmers!</p>
   ) : (
-    <ShimmerComponent fit={Fit.FillWidth} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={100} />
+    <ShimmerComponent fit={uniformFit} className="skinny-card-line" shape={Shapes.RECTANGLE} shimmerPct={100} />
   );
 
   const footer = isLoaded ? (
     <small className="card-footer">Now go forth and make shimmer loaders with <a href="https://rive.app">Rive</a>!</small>
   ) : (
-    <ShimmerComponent fit={Fit.FillWidth} className="skinny-card-line card-footer" shape={Shapes.RECTANGLE} shimmerPct={70} />
+    <ShimmerComponent fit={uniformFit} className="skinny-card-line card-footer" shape={Shapes.RECTANGLE} shimmerPct={70} />
   );
 
   return (

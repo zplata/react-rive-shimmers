@@ -3,7 +3,7 @@ import {useRive, useStateMachineInput, Layout, Fit, Alignment} from '@rive-app/r
 
 const ShimmerComponent = ({shimmerPct = 100, shape, fit, ...rest}) => {
   const {rive, RiveComponent} = useRive({
-    src: 'shimmer_v4.riv',
+    src: 'shimmers_v4.riv',
     autoplay: true,
     artboard: shape || 'Rectangle',
     stateMachines: "ShimmerMachine",
